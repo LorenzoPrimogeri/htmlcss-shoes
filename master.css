@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.conteiner{
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+}
+ul li{
+    display: inline-block;
+}
+header{
+    position: flex;
+}
+li{
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.page{
+   position: relative;
+   height: 100%;
+}
+#First{
+    background-color: red;
+}
+#Second{
+    background-color: rgb(1, 68, 1);
+}
+#Third{
+    background-color: yellow;
+}
+.mid-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.description{
+    text-align: center;
+    color: yellow;
+    font-size: 70px;
+}
+.green{
+    color: rgb(1, 68, 1);
+}
+
