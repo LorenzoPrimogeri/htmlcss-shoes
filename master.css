@@ -25,13 +25,15 @@ li a{
     background-color: white;
     color: black;
     font-weight: 900;
-    padding: 5px;
+    padding: 2px 5px 2px 5px;
 }
 header {
     background-color: cyan;
     position: fixed;
     left: 0px;
     top: 0px;
+    width: 100%;
+    z-index: 2;
   }
 li{
     float: right;
@@ -43,10 +45,13 @@ li{
    height: 100%;
 }
 #First{
-    background-color: coral;
+    background-color:hotpink;
 }
 #Second{
     background-color: rgb(1, 68, 1);
+}
+.flip{
+    transform: scaleX(-1);
 }
 #Third{
     background-color: yellow;
@@ -68,4 +73,17 @@ li:first-child{
 .green{
     color: rgb(1, 68, 1);
 }
+footer {
+    display: inline-block;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    z-index: 2;
+    transform: translate(-50%);
+  }
 
+footer:after{
+    content: "\2764";
+    color: red;
+}
